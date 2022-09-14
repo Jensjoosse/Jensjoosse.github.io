@@ -6,19 +6,18 @@ body {
 }
 
 /* layout */
-p {
-    padding: 100px;
-    }
 
-.main {
-    margin-left: 100px; /* Same as the width of the sidebar */
+
+ .main {
+    margin-left: 100px; 
+    margin-top: 44px;
     padding: 0px 10px;
-    }
+    } 
 
 
 
 /* navigation bar */
-ul {
+.ulnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -72,6 +71,120 @@ ul {
     color: #f1f1f1;
   }
   
+ /* content */
+ .maincontent {
+  border: 1px solid black;
+  margin-left: 100px;
+  margin-top: 44px;
+  margin-bottom: 0px;
+  height: 950px;
+  
+  
+  
+  background-color: rgb(227, 241, 247);
+}
+#hz-logo {
+  margin-top: 15px;
+  margin-right: 15px;
+}
+.tablegrades {
+  background-color: aliceblue;
+  width: fit-content;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+table, th, td {
+  border: 1px solid;
+}
+table {
+  border-collapse: collapse;
+}
+.progbar {
+  border-radius: 25px;
+  border: 1px solid;
+  width: 560px;
+  height: 44px;
+  margin-left: 30px;
+  background-color: rgb(181, 184, 183);
+  z-index: 1;
+
+}
+.progress {
+  border-radius: 25px;
+  border: 1px solid black;
+  width: 20%;
+  margin-left: 0px;
+  text-align: center;
+  background-color:rgb(37, 157, 13) ;
+  color: white;
+  z-index: 900;
+}
+
+.nsba {
+  border-radius: 25px;
+  border: 1px solid black;
+  width: 75%;
+  margin-left: 0px;
+  text-align: right;
+  background-color:rgb(223, 148, 82);
+  z-index: 900;
+}
+
+.paraindex {
+  border: #333;
+  margin: 30px;
+  width: 300px;
+}
+.profileinfo {
+  width: 500px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.textprofile {
+  width: 300px;
+  margin-top: 30px;
  
-  
-  
+}
+/* faq page */
+.faq {
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 570px;
+}
+
+.faqaccordion {
+  background-color: rgb(95, 199, 218);
+  color: white;
+  border: 1px solid rgb(227, 241, 247);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+.faqactive, .faqaccordion:hover {
+  background-color: #ccc;
+}
+
+.answer {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.blog {
+  margin-left: 30px;
+  margin-top: 30px;
+  border: 1px solid;
+  width: 600px;
+  height: 300px;
+}
+.blogtext {
+  margin-left: 30px;
+  margin-top: 30px;
+  border: 1px solid;
+  width: 300px;
+  height: 240px;
+}

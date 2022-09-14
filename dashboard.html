@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="stylesheet.css">
     <title>dashboard</title>
   </head>
+
   <body>
 
        <!-- navigation bar -->
        <nav>
-        <ul>
+        <ul class="ulnav">
             <li><a href="index.html">homepage</a></li>
             <li><a href="profile.html">profile</a></li>
             <li><a class="active" href="dashboard.html">dashboard</a></li>
@@ -26,13 +27,108 @@
           <a href="https://hz.osiris-student.nl/#/home" target="_blank">My Progress</a>
           <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/NL/5.-Onderwijs-examenregelingen/Onderwijs-en-examenregeling/OER-HZ-Bacheloropleiding-voltijd-2022-2023-DEF-13-juni.pdf" target="_blank">Course and Examination Regulations</a>
         </div>
-    
+     </nav>
 
-          <div id="content">
-             <p>hello world (content) </p>
-         </div>
-      </div>
-    </nav>
+<!-- content -->
+<div class="maincontent">
+  <img id="hz-logo" src="img/hz-logo.png" alt="hz logo" style="width: 100px; height: 100px; float: right;">
+ 
+
+  <div class="tablegrades">
+    <table>
+      <tr>
+        <th>Quartile</th>
+        <th>Course</th>
+        <th>EC</th>
+        <th>Exam</th>
+        <th>grade</th>
+      </tr>
+      <tr>
+        <td rowspan="3">1</td>
+        <td>Program and Career Orientation</td>
+        <td>2,5</td>
+        <td>Assesment exam</td>
+        <td>...</td><!-- add grade -->
+      </tr>
+      <tr>
+        <td>Computer Science Basics</td>
+        <td>5</td>
+        <td>Written Exam</td>
+        <td>...</td><!-- add grade -->
+      </tr>
+      <tr>
+        <td>Programming Basics</td>
+        <td>5</td>
+        <td>Case Study Exam</td>
+        <td>...</td><!-- add grade -->
+      </tr>
+      <tr>
+        <td rowspan="2">2</td>
+        <td rowspan="2">Object Oriented Programming</td>
+        <td rowspan="2">5</td>
+        <td>Case Study 50%</td>
+        <td>...</td><!-- add grade -->
+      </tr>
+      <tr>
+        <td>Project 50%</td>
+        <td>...</td><!-- add grade -->
+      </tr>
+      <tr>
+        <td rowspan="4">3</td>
+        <td>Framework Development 1</td>
+        <td>5</td>
+        <td>Case Study</td>
+        <td>...</td><!-- add grade -->
+      </tr>
+      <tr>
+        <td rowspan="3">Framework Project 1</td>
+        <td rowspan="3">7,5</td>
+        <td>Project 33%</td>
+        <td>...</td><!-- add grade -->
+      </tr>
+      <tr>
+        <td>Case Study Exam</td>
+        <td>...</td><!-- add grade -->
+      </tr>
+      <tr>
+        <td>Report</td>
+        <td>...</td><!-- add grade -->
+      </tr>
+      <tr>
+        <td rowspan="3">Quartile 4</td>
+        <td rowspan="3">Framework Project 2</td>
+        <td rowspan="3">10</td>
+        <td>Portfolio 50%</td>
+        <td>...</td><!-- add grade -->
+      </tr>
+      <tr>
+        <td>Project 25%</td>
+        <td>...</td><!-- add grade -->
+      </tr>
+      <tr>
+        <td>Assessment 25%</td>
+        <td>...</td><!-- add grade -->
+      </tr>
+      <tr>
+        <td>Quartile The Entire Year</td>
+        <td>Portfolio</td>
+        <td>12,5</td>
+        <td>Portfolio</td>
+        <td>...</td> <!-- add grade -->
+      </tr>
+
+    </table>
+   
+    </div>
+      <div class="progbar"> 
+        <div class="nsba">
+        <div class="progress"><p>20%</p>
+        </div>
+        </div>
+     
+    </div>
+</div>
+   
 
   </body>
 </html>

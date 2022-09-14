@@ -11,7 +11,7 @@
 
       <!-- navigation bar -->
       <nav>
-        <ul>
+        <ul class="ulnav">
             <li><a href="index.html">homepage</a></li>
             <li><a href="profile.html">profile</a></li>
             <li><a href="dashboard.html">dashboard</a></li>
@@ -26,16 +26,67 @@
           <a href="https://hz.osiris-student.nl/#/home" target="_blank">My Progress</a>
           <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/NL/5.-Onderwijs-examenregelingen/Onderwijs-en-examenregeling/OER-HZ-Bacheloropleiding-voltijd-2022-2023-DEF-13-juni.pdf" target="_blank">Course and Examination Regulations</a>
         </div>
-    
+     </nav>
 
-          <div id="sidebar">
-              <p>hello world (sidebar)</p>
+          
+        <!-- content -->
+    <div class="maincontent">
+      <img id="hz-logo" src="img/hz-logo.png" alt="hz logo" style="width: 100px; height: 100px; float: right;">
+      <div class="faq">
+
+          <button class="faqaccordion">How can you print a document from your laptop at HZ?</button>
+          <div class="answer">
+          <p>At http://print.hz.nl can you log in with your HZ account and upload
+            a file that you want to print, using your HZ pas by any HZ printers
+            you will be able print them .</p>
           </div>
-          <div id="content">
-             <p>hello world (content) </p>
-         </div>
+
+          <button class="faqaccordion">How can you scan a document a send it to your laptop at HZ?</button>
+          <div class="answer">
+            <p>At a HZ printer you can scan your pas and choose scan and the files
+              will be send to your mail box.</p>
+          </div>
+
+          <button class="faqaccordion">How can I buy something on the HZ web shop?</button>
+          <div class="answer">
+            <p>Go to the https://webshow.hz.nl and add the thing u want to your cart, go to your cart and order the item</p>
+          </div>
+
+          <button class="faqaccordion">Where can I find the latest instructions on what to do when you are sick / show symptoms of COVID?</button>
+          <div class="answer">
+            <p>Go to https://hz.nl/actualiteiten and click on "Coronavirus", here you will need to click on "positief getest" and then you will get the information. </p>
+          </div>
+
+          <button class="faqaccordion">How can you book a project space in one of the wings?</button>
+          <div class="answer">
+            <p>On the home page on Self Service Portal you can choose
+              "Make a reservation" and you will be able to book a room.</p>
+          </div>
+
+          <button class="faqaccordion">What are the instructions if you want to park your car at the HZ parking lot?</button>
+          <div class="answer">
+            <p>U will need to have an active HZ pas and use scan it when you park your car.</p>
+          </div>
+
       </div>
-    </nav>
+    </div>
+     <script>
+      var acc = document.getElementsByClassName("faqaccordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("faqactive");
+
+    var answer = this.nextElementSibling;
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      answer.style.display = "block";
+    }
+  });
+}
+     </script>
+   
 
   </body>
 </html>
