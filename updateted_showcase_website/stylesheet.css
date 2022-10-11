@@ -1,0 +1,290 @@
+/* colorpallete */
+/* 
+03045e
+023e8a
+0077b6
+0096c7
+009ed8
+00B4D8
+48CAE4
+90e0ef
+ADE8F4
+CAF0F8
+*/
+
+/* layout */
+html, body {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.header {
+  background-color: #ADE8F4;
+  position: sticky;
+  width: 100%;
+  height: 54px;
+  margin-bottom: 0px;
+}
+
+.main {
+  height: 2000px;
+  width: 100%;
+  top: 50px;
+ background-color: #ADE8F4;
+}
+.content {
+  width: 60%;
+  height: 100%;
+  float: left;
+
+}
+.footer {
+  background-color: rgb(0, 119, 255);
+  height: 60px;
+  width: 100%;
+  bottom: 0px;
+  position: static;
+  
+}
+.leftsidebar {
+  /* background-color: blueviolet; */
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+.rightsidebar {
+  /* background-color: blueviolet; */
+  width: 20%;
+  height: 100%;
+  float: right;
+}
+/* layout */
+
+
+body{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+/* navigation bar */
+.ulnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0096C7;
+  position: fixed;
+  text-align: center;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 54px;
+  font-size: 17px;
+}
+
+li a{
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 20px;
+  margin: 0px;
+  width: fit-content;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #0077B6;
+}
+
+.active {
+  background-color: #2687bf;
+}
+/* navigation bar */
+
+/* sidebar */
+.sidenav {
+  height: 100%;
+  width: 15%; 
+  position: fixed; 
+  z-index: 1; 
+  top: 54px;
+  left: 0;
+  background-color: #009ed8;
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 6px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #ffffff;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color: #0090d8;
+}
+/* sidebar */
+
+/* Content */
+.pagename {
+  font-size: large;
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+  background-color: #CAF0F8;
+  box-shadow: 10px 10px 5px lightblue;
+}
+.paragraph{
+  font-size: medium;
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+  background-color: #CAF0F8;
+  box-shadow: 5px 5px 3px lightblue;
+}
+#hz-logo{
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+  margin-left: 30%;
+  margin-right: 30%;
+  float: right;
+}
+#index-picture{
+  margin-top: 120px;
+  margin-left: 10px;
+  margin-right: 15%;
+  float: right;
+
+}
+
+/* footer */
+.icons {
+height: 40px;
+width: 40px;
+}
+.iconlist{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: static;
+  height: 54px;
+  bottom: 10px;
+  float: right ;
+  width: 80%;
+} 
+.iconlist p{
+float: left;
+padding: 10px;
+} 
+/* footer */
+
+/* faq */
+.faq {
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 95%;
+  font-size: medium;
+  box-shadow: 5px 5px 3px lightblue;
+}
+
+.faqaccordion {
+  background-color: rgb(95, 199, 218);
+  color: white;
+  border: 1px solid rgb(227, 241, 247);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  font-size: medium;
+}
+
+.faqactive, .faqaccordion:hover {
+  background-color: rgb(78, 170, 186);
+}
+
+.answer {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+/* faq */
+
+/* dashboard */
+.tablegrades {
+  background-color: aliceblue;
+  width: 95%;
+  margin-top: 30px;
+  margin-left: 30px;
+  box-shadow: 7px 7px 5px lightblue;
+}
+table {
+  border: 1px solid;
+  width: 100%;
+  font-size: large;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid;
+  width: 20%;
+  font-size: large;
+}
+
+.quartile{
+  width: 25%;
+}
+
+.ecmeter, meter{
+  width: 95%;
+  height: 50px;
+  margin-left: 2.5%;
+  position:static;
+}
+.notpassed{
+  color: red;
+}
+.passed{
+  color: green;
+}
+/* dashboard */
+
+/* profile */
+.lists{
+  text-align: left;
+}
+/* profile */
+
+/* blogs */
+.blogpost{
+  width: 300px;
+  height: 300px;
+  border: 3px solid;
+  background-color: aliceblue;
+  text-align: center;
+  margin: 30px;
+  float: left;
+  box-shadow: 7px 7px 7px lightblue;
+}
+.buttonblog{
+  float: right;
+  bottom: 0px;
+  padding: 10px 18px;
+  background-color: #2288c3;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 10px;
+  bottom: 0px;
+  color: #f1f1f1;
+  margin-top: 130px;
+}
+/* blogs */
