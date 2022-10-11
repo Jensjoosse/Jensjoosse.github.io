@@ -1,92 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>faq</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>FAQ</title>
   </head>
   <body>
-
-      <!-- navigation bar -->
+    <div class="header">
       <nav>
         <ul class="ulnav">
-            <li><a href="index.html">homepage</a></li>
-            <li><a href="profile.html">profile</a></li>
-            <li><a href="dashboard.html">dashboard</a></li>
-            <li><a class="active" href="faq.html">faq</a></li>
-            <li><a href="blog-main.html">blog</a></li>
+          <li><a href="index.html">homepage</a></li>
+          <li><a href="profile.html">profile</a></li>
+          <li><a href="dashboard.html">dashboard</a></li>
+          <li><a class="active" href="faq.html">faq</a></li>
+          <li><a href="blog-main.html">blog</a></li>
         </ul>
-
-        <div class="sidenav">
-          <a href="https://glaze-donut-5a5.notion.site/PCO1en-Your-Showcase-Website-7bc8c340f66047d0b49b83e8dc44ba23" target="_blank">Notion Learn Environment</a>
-          <a href="https://teams.microsoft.com/_#/school/conversations/Algemeen?threadId=19:827654897ab746089c081f24aff1c984@thread.skype&ctx=channel" target="_blank">Teams</a>
-          <a href="https://github.com/HZ-HBO-ICT" target="_blank">Github HBO-ICT</a>
-          <a href="https://hz.osiris-student.nl/#/home" target="_blank">My Progress</a>
-          <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/NL/5.-Onderwijs-examenregelingen/Onderwijs-en-examenregeling/OER-HZ-Bacheloropleiding-voltijd-2022-2023-DEF-13-juni.pdf" target="_blank">Course and Examination Regulations</a>
-        </div>
-     </nav>
-
-          
-        <!-- content -->
-    <div class="maincontent">
-      <img id="hz-logo" src="img/hz-logo.png" alt="hz logo" style="width: 100px; height: 100px; float: right;">
-      <div class="faq">
-
-          <button class="faqaccordion">How can you print a document from your laptop at HZ?</button>
-          <div class="answer">
-          <p>At http://print.hz.nl can you log in with your HZ account and upload
-            a file that you want to print, using your HZ pas by any HZ printers
-            you will be able print them .</p>
-          </div>
-
-          <button class="faqaccordion">How can you scan a document a send it to your laptop at HZ?</button>
-          <div class="answer">
-            <p>At a HZ printer you can scan your pas and choose scan and the files
-              will be send to your mail box.</p>
-          </div>
-
-          <button class="faqaccordion">How can I buy something on the HZ web shop?</button>
-          <div class="answer">
-            <p>Go to the https://webshow.hz.nl and add the thing u want to your cart, go to your cart and order the item</p>
-          </div>
-
-          <button class="faqaccordion">Where can I find the latest instructions on what to do when you are sick / show symptoms of COVID?</button>
-          <div class="answer">
-            <p>Go to https://hz.nl/actualiteiten and click on "Coronavirus", here you will need to click on "positief getest" and then you will get the information. </p>
-          </div>
-
-          <button class="faqaccordion">How can you book a project space in one of the wings?</button>
-          <div class="answer">
-            <p>On the home page on Self Service Portal you can choose
-              "Make a reservation" and you will be able to book a room.</p>
-          </div>
-
-          <button class="faqaccordion">What are the instructions if you want to park your car at the HZ parking lot?</button>
-          <div class="answer">
-            <p>U will need to have an active HZ pas and use scan it when you park your car.</p>
-          </div>
-
-      </div>
+      </nav>
     </div>
-     <script>
-      var acc = document.getElementsByClassName("faqaccordion");
-var i;
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("faqactive");
 
-    var answer = this.nextElementSibling;
-    if (answer.style.display === "block") {
-      answer.style.display = "none";
-    } else {
-      answer.style.display = "block";
-    }
-  });
-}
-     </script>
-   
+    <div class="main">
+      <div class="leftsidebar">
+        <div class="sidenav">
+          <a
+            href="https://glaze-donut-5a5.notion.site/PCO1en-Your-Showcase-Website-7bc8c340f66047d0b49b83e8dc44ba23"
+            target="_blank"
+            >Notion Learn Environment</a
+          >
+          <a
+            href="https://teams.microsoft.com/_#/school/conversations/Algemeen?threadId=19:827654897ab746089c081f24aff1c984@thread.skype&ctx=channel"
+            target="_blank"
+            >Teams</a
+          >
+          <a href="https://github.com/HZ-HBO-ICT" target="_blank"
+            >Github HBO-ICT</a
+          >
+          <a href="https://hz.osiris-student.nl/#/home" target="_blank"
+            >My Progress</a
+          >
+          <a
+            href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/NL/5.-Onderwijs-examenregelingen/Onderwijs-en-examenregeling/OER-HZ-Bacheloropleiding-voltijd-2022-2023-DEF-13-juni.pdf"
+            target="_blank"
+            >Course and Examination Regulations</a
+          >
+          <a
+            href=" https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2021-2022/11.-Uitvoeringsregeling-OER-ICT-Voltijd-2021-2022.pdf"
+            target="_blank"
+            >Implementation Regulations</a
+          >
+        </div>
+      </div>
+      <div class="content">
+        <div class="pagename">
+          <h1>faq page</h1>
+        </div>
+        <div class="faq">
+          <button class="faqaccordion">
+            How can you print a document from your laptop at HZ?
+          </button>
+          <div class="answer">
+            <p>
+              At http://print.hz.nl can you log in with your HZ account and
+              upload a file that you want to print, using your HZ pas by any HZ
+              printers you will be able print them .
+            </p>
+          </div>
 
+          <button class="faqaccordion">
+            How can you scan a document a send it to your laptop at HZ?
+          </button>
+          <div class="answer">
+            <p>
+              At a HZ printer you can scan your pas and choose scan and the
+              files will be send to your mail box.
+            </p>
+          </div>
+
+          <button class="faqaccordion">
+            How can I buy something on the HZ web shop?
+          </button>
+          <div class="answer">
+            <p>
+              Go to the https://webshow.hz.nl and add the thing u want to your
+              cart, go to your cart and order the item
+            </p>
+          </div>
+
+          <button class="faqaccordion">
+            Where can I find the latest instructions on what to do when you are
+            sick / show symptoms of COVID?
+          </button>
+          <div class="answer">
+            <p>
+              Go to https://hz.nl/actualiteiten and click on "Coronavirus", here
+              you will need to click on "positief getest" and then you will get
+              the information.
+            </p>
+          </div>
+
+          <button class="faqaccordion">
+            How can you book a project space in one of the wings?
+          </button>
+          <div class="answer">
+            <p>
+              On the home page on Self Service Portal you can choose "Make a
+              reservation" and you will be able to book a room.
+            </p>
+          </div>
+
+          <button class="faqaccordion">
+            What are the instructions if you want to park your car at the HZ
+            parking lot?
+          </button>
+          <div class="answer">
+            <p>
+              U will need to have an active HZ pas and use scan it when you park
+              your car.
+            </p>
+          </div>
+        </div>
+      </div>
+      <script>
+        var acc = document.getElementsByClassName("faqaccordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("faqactive");
+
+            var answer = this.nextElementSibling;
+            if (answer.style.display === "block") {
+              answer.style.display = "none";
+            } else {
+              answer.style.display = "block";
+            }
+          });
+        }
+      </script>
+    </div>
+    <div class="rightsidebar">
+      <img id="hz-logo" src="img/hz-logo.png" alt="hz logo" />
+    </div>
+
+    <div class="footer">
+      <ul class="iconlist">
+        <li>
+          <a href="https://www.instagram.com/jens.joosse/"
+            ><img
+              class="icons"
+              src="/updateted_showcase_website/img/Instagram_icon.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/jens.joosse"
+            ><img
+              class="icons"
+              src="/updateted_showcase_website/img/facebookicon.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/jensjoosse"
+            ><img
+              class="icons"
+              src="/updateted_showcase_website/img/linkedin_icon.png"
+          /></a>
+        </li>
+        <li><p>Jens Joosse</p></li>
+        <li><p>Email: Jensshak@gmail.com</p></li>
+        <li><p>06-15555532</p></li>
+      </ul>
+    </div>
   </body>
 </html>
